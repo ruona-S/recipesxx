@@ -11,14 +11,21 @@ function Recipe() {
    let params = useParams();
 
 
-   const fetchInfo = async () => {
+   /*const fetchInfo = async () => {
       const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
       const recipeInfo = await data.json();
       setInfo(recipeInfo);
-   }
+   }*/
 
    useEffect(() => {
-      fetchInfo()
+      const fetchInfo = async () => {
+         const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+         const recipeInfo = await data.json();
+         setInfo(recipeInfo);
+      };
+
+
+      fetchInfo();
    }, [params.name]);
 
 
