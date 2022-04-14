@@ -78,6 +78,7 @@ const Box = styled.div`
      font-size: 1.3rem;
      color: black;
      text-decoration: none;
+     border-bottom: none;
 
      &:hover {
         color: rgb(178, 34, 34);
