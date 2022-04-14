@@ -66,9 +66,7 @@ const Grid = styled.div`
   margin: 0 auto;
 `;
 
-const Link = styled.link`
-  text-decoration: none;
-`
+
 
 
 const Box = styled.div`
