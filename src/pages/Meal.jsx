@@ -76,6 +76,12 @@ const Box = styled.div`
   }
   h4 {
      font-size: 1.3rem;
+     color: black;
+     text-decoration: none;
+
+     &:hover {
+        color: rgb(178, 34, 34);
+     }
   }
 `;
 
