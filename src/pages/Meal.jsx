@@ -66,6 +66,11 @@ const Grid = styled.div`
   margin: 0 auto;
 `;
 
+const Link = styled.div`
+  text-decoration: none;
+`
+
+
 const Box = styled.div`
   min-height: 20rem;
   border-radius: 10px;
@@ -77,8 +82,6 @@ const Box = styled.div`
   h4 {
      font-size: 1.3rem;
      color: black;
-     text-decoration: none;
-     border-bottom: none;
 
      &:hover {
         color: rgb(178, 34, 34);
